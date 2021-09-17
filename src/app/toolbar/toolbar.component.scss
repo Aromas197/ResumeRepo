@@ -1,0 +1,17 @@
+span {
+    transition: color .125s linear;
+    cursor: pointer;
+}
+
+span:hover {
+    color: lightgrey;
+}
+button {
+    margin: auto 15px;
+    transition: background-color .125s linear;
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(80, 80, 80);
+}
