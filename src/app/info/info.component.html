@@ -1,2 +1,64 @@
-<p>info works!
-</p>
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Intro">
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile>
+                <h1>Self Motivated.</h1> 
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h1>Avid Learner.</h1>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h1>Eager Builder.</h1>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="3">
+            <mat-grid-tile>
+                <h4>These are all words and phrases used to describe myself as a developer. During my time in the web development industry,
+                I've built applications from the ground up for internal development teams and external customers alike.
+                If you're looking for a Front End or Full Stack Developer to add to your team, consider me the guy for the job.</h4>
+            </mat-grid-tile>
+            <mat-grid-tile  [colspan]="2">
+                <img src="../../assets/images/parrythis.png">
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-tab>
+    <mat-tab label="Employment">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Front End Engineer</mat-card-title>
+                <mat-card-subtitle>StrongKey</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/images/StrongKey.png">
+            <mat-card-content>
+                <p class="headpoint">Maintained an existing Typescript/Angular code base</p>
+                <div class="description">
+                    <ul>
+                        <li>Fixed 85% of the pre-existing issues</li>
+                        <li>Ensured secure code base by patching 150+ security vulnerabilities</li>
+                        <li>Updated web applications to use the latest versions of implemented technologies</li>
+                        <li>Technologies Used: <strong>Typescript, Git, Angular</strong></li>
+                    </ul>
+                </div>
+                <p class="headpoint">Created a responsive dashboard for viewing and editing server properties (NDA)</p>
+                <div>
+                    <ul>
+                        <li>Created a server management portal that increased customer accessibility by 20%</li>
+                        <li>Made it easier for customers to manage servers autonomously, reducing incoming tech support calls</li>
+                        <li>Technologies Used: <strong>Typescript, Angular</strong></li>
+                    </ul>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Education">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Bachelor's Degree in Computer Science</mat-card-title>
+                <mat-card-subtitle>California State University Monterey Bay</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/images/CSUMB.png">
+            <mat-card-content>
+            </mat-card-content>
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>
