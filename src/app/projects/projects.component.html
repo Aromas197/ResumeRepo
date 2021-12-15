@@ -1,16 +1,16 @@
 <mat-toolbar color="warning">
     <p>Projects</p>
 </mat-toolbar>
-<mat-card>
+<mat-card *ngFor="let project of projects">
     <mat-card-header>
-        <mat-card-title><a href="https://mcfate-yelpcamp.herokuapp.com">YelpCamp</a></mat-card-title>
-        <mat-card-subtitle>Javascript Website with Node.JS Back End</mat-card-subtitle>
+        <mat-card-title><a [href]="project.webLink">{{ project.title }}</a></mat-card-title>
+        <mat-card-subtitle>{{ project.description }}</mat-card-subtitle>
     </mat-card-header>
-    <a href="https://mcfate-yelpcamp.herokuapp.com" target="_blank"><img mat-card-image src="../../assets/images/camp.png"></a>
+    <a [href]="project.webLink" target="_blank"><img mat-card-image [src]="project.imgLink"></a>
     <mat-card-content>
         <p>Front End Technologies: </p>
-        <p><strong>Javascript, Bootstrap</strong></p>
+        <p><strong>{{ project.frontEnd }}</strong></p>
         <p>Back End Technologies:</p>
-        <p><strong>Node.JS, Express, MongoDB</strong></p>
+        <p><strong>{{ project.backEnd }}</strong></p>
     </mat-card-content>
 </mat-card>
